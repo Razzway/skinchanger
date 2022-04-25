@@ -1,9 +1,3 @@
--------- ARRETE D'ESSAYEZ DE DUMP POUR BYPASS MON ANTICHEAT TU REUSSIRA PAS ^^ --------
-_print = print
-_TriggerServerEvent = TriggerServerEvent
-_NetworkExplodeVehicle = NetworkExplodeVehicle
-_AddExplosion = AddExplosion
-
 local Components = {
 	{label = _U('sex'),						name = 'sex',				value = 0,		min = 0,	zoomOffset = 0.6,		camOffset = 0.65},
 	{label = _U('face'),					name = 'face',				value = 0,		min = 0,	zoomOffset = 0.6,		camOffset = 0.65},
@@ -207,48 +201,48 @@ function ApplySkin(skin, clothes)
 	if clothes ~= nil then
 		for k, v in pairs(clothes) do
 			if
-				k ~= 'sex' and
-				k ~= 'face' and
-				k ~= 'skin' and
-				k ~= 'age_1' and
-				k ~= 'age_2' and
-				k ~= 'eye_color' and
-				k ~= 'beard_1' and
-				k ~= 'beard_2' and
-				k ~= 'beard_3' and
-				k ~= 'beard_4' and
-				k ~= 'hair_1' and
-				k ~= 'hair_2' and
-				k ~= 'hair_color_1' and
-				k ~= 'hair_color_2' and
-				k ~= 'eyebrows_1' and
-				k ~= 'eyebrows_2' and
-				k ~= 'eyebrows_3' and
-				k ~= 'eyebrows_4' and
-				k ~= 'makeup_1' and
-				k ~= 'makeup_2' and
-				k ~= 'makeup_3' and
-				k ~= 'makeup_4' and
-				k ~= 'lipstick_1' and
-				k ~= 'lipstick_2' and
-				k ~= 'lipstick_3' and
-				k ~= 'lipstick_4' and
-				k ~= 'blemishes_1' and
-				k ~= 'blemishes_2' and
-				k ~= 'blush_1' and
-				k ~= 'blush_2' and
-				k ~= 'blush_3' and
-				k ~= 'complexion_1' and
-				k ~= 'complexion_2' and
-				k ~= 'sun_1' and
-				k ~= 'sun_2' and
-				k ~= 'moles_1' and
-				k ~= 'moles_2' and
-				k ~= 'chest_1' and
-				k ~= 'chest_2' and
-				k ~= 'chest_3' and
-				k ~= 'bodyb_1' and
-				k ~= 'bodyb_2'
+			k ~= 'sex' and
+					k ~= 'face' and
+					k ~= 'skin' and
+					k ~= 'age_1' and
+					k ~= 'age_2' and
+					k ~= 'eye_color' and
+					k ~= 'beard_1' and
+					k ~= 'beard_2' and
+					k ~= 'beard_3' and
+					k ~= 'beard_4' and
+					k ~= 'hair_1' and
+					k ~= 'hair_2' and
+					k ~= 'hair_color_1' and
+					k ~= 'hair_color_2' and
+					k ~= 'eyebrows_1' and
+					k ~= 'eyebrows_2' and
+					k ~= 'eyebrows_3' and
+					k ~= 'eyebrows_4' and
+					k ~= 'makeup_1' and
+					k ~= 'makeup_2' and
+					k ~= 'makeup_3' and
+					k ~= 'makeup_4' and
+					k ~= 'lipstick_1' and
+					k ~= 'lipstick_2' and
+					k ~= 'lipstick_3' and
+					k ~= 'lipstick_4' and
+					k ~= 'blemishes_1' and
+					k ~= 'blemishes_2' and
+					k ~= 'blush_1' and
+					k ~= 'blush_2' and
+					k ~= 'blush_3' and
+					k ~= 'complexion_1' and
+					k ~= 'complexion_2' and
+					k ~= 'sun_1' and
+					k ~= 'sun_2' and
+					k ~= 'moles_1' and
+					k ~= 'moles_2' and
+					k ~= 'chest_1' and
+					k ~= 'chest_2' and
+					k ~= 'chest_3' and
+					k ~= 'bodyb_1' and
+					k ~= 'bodyb_2'
 			then
 				Character[k] = v
 			end
