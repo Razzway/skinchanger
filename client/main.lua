@@ -1,5 +1,4 @@
-local LastSkin, PlayerLoaded, cam, isCameraActive
-local FirstSpawn, zoomOffset, camOffset, heading = true, 0.0, 0.0, 90.0
+ESX = nil
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -7,6 +6,9 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 	end
 end)
+
+local LastSkin, PlayerLoaded, cam, isCameraActive
+local FirstSpawn, zoomOffset, camOffset, heading = true, 0.0, 0.0, 90.0
 
 function OpenMenu(submitCb, cancelCb, restrict)
 	local playerPed = PlayerPedId()
